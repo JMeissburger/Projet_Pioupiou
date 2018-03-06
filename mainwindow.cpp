@@ -40,7 +40,7 @@ void MainWindow::on_pushButton_clicked()
 {
      QString out,out2;
      bool ok=false;
-    process->start("python3 /home/jordan/Documents/Cour_Pioupiou/compteur.py");
+    process->start("python3 ../TestQlabelQpainter/compteur.py");
     out = process->readAllStandardOutput();
     out2 = process->readAllStandardError();
     set_Speed(out.toInt(&ok,10));
